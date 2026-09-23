@@ -1,28 +1,17 @@
-# MASTER PAY — Hoe werkt het?
+# MASTER PAY — voorbeeldwebsite v2
 
-Voorbeeldpagina met vier illustraties, uitklapbare voorbeelden en lokale demonstraties van deelbetaling, herinnering en dossierafsluiting.
+Twee pagina's: index.html (Home) en hoe-werkt-het.html (stappenplan met illustraties).
+Het gedeelde menu bevat Home, Hoe werkt het, Mijn Dossier, FAQ en Contact.
+De laatste drie openen voorlopig een melding. Uploaden is uitsluitend een demonstratie.
 
-## Publiceren via GitHub en Vercel
+## Bestaande GitHub/Vercel-versie vervangen
+1. Pak de ZIP uit.
+2. Upload index.html, hoe-werkt-het.html, vercel.json en de volledige map assets naar de hoofdmap van je bestaande GitHub-repository. Vervang de oude index.html en vercel.json.
+3. Sla de wijziging op met Commit changes. Gebruik de branch die aan je Vercel-project is gekoppeld.
+4. Vercel publiceert de nieuwe versie als automatische deployments actief zijn. Controleer onder Deployments of de nieuwste versie Ready is.
+5. Open de website opnieuw en vernieuw zo nodig met Ctrl+F5.
 
-1. Pak het ZIP-bestand uit.
-2. Maak een nieuwe GitHub-repository aan.
-3. Upload de uitgepakte bestanden en mappen. Zorg dat `index.html` en `vercel.json` direct in de hoofdmap van de repository staan, niet in een extra bovenliggende map. Upload dus niet alleen het ZIP-bestand.
-4. Importeer de repository in Vercel als nieuw project.
-5. Gebruik Framework Preset `Other`, Root Directory de hoofdmap, geen Build Command en Output Directory `.`. De meegeleverde `vercel.json` stelt het framework, de buildopdracht en uitvoermap al in.
-6. Klik op Deploy. Latere wijzigingen in de gekoppelde GitHub-branch kunnen opnieuw worden gepubliceerd door Vercel.
-
-Er is geen installatie, database, API-sleutel of abonnement voor de werking van deze statische pagina nodig. Eventuele hostingvoorwaarden en -kosten zijn die van je eigen Vercel-account.
-
-## Bestanden
-
-- `index.html`: zelfstandige browserexport met opmaak, interacties, logo en vier ingebedde afbeeldingen. Kan ook lokaal geopend worden.
-- `vercel.json`: instellingen voor de statische publicatie.
-- `illustraties/`: de vier oorspronkelijke PNG-bestanden, apart meegeleverd voor later gebruik. De pagina gebruikt de reeds ingebedde, compacte versies.
-
-## Wat deze versie doet
-
-De vier stappen, illustraties, veelgestelde vragen en interactieve voorbeelden zijn zichtbaar. Er worden geen facturen geüpload, geen betalingen verwerkt en geen herinneringen verstuurd. De uploadknop toont dat het om een ontwerpvoorbeeld gaat. De pagina bevat geen echte klantgegevens.
-
-De export bevat een ingesloten pagina voor de oorspronkelijke interactieve weergave. De illustraties en het logo zijn ingebed. Kleine pictogrammen kunnen afhankelijk zijn van de meegeleverde browserruntime en internettoegang; de tekst en hoofdillustraties zijn daarvan onafhankelijk.
-
-Vercel-documentatie: https://vercel.com/docs/builds/configure-a-build
+Instellingen: Framework Other; geen buildopdracht; output directory .; geen omgevingsvariabelen.
+De oude map illustraties mag blijven staan, maar wordt door deze versie niet gebruikt.
+De afbeeldingen, CSS en scripts staan nu lokaal in assets; geen externe bibliotheken of iframe nodig.
+Lokaal bekijken: open index.html in je browser. Alle afbeeldingen en navigatie werken ook lokaal.
